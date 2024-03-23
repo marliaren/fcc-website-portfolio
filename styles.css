@@ -1,0 +1,855 @@
+:root {
+    --textcolor: #fff;
+    --bluehead: #6293EF;
+    /* --bluehead: #6362FF; */
+    --bluehover: #000526;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 62.5%;
+  }
+  
+  body {
+      width: 100%;
+      font-family: "Montserrat", sans-serif;
+      background-color: #000526;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='460' height='460' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2300004A' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23202053'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  h1 {
+      font-size: 6.5rem;
+  }
+  
+  h2 {
+      font-size: 5.8rem;
+  }
+  
+  h3 {
+      font-size: 5rem;
+  }
+  
+  h4 {
+      font-size: 4rem;
+  }
+  
+  p {
+      font-size: 1.6rem;
+      line-height: 2rem;
+  }
+  
+  a {
+      font-size: 1.7rem;
+      text-decoration: none;
+  }
+  
+  a:hover {
+      color: var(--bluehover);
+      cursor: pointer;
+  }
+  
+  hr {
+      color: #E6E6E6 ;
+  }
+  
+  h1, h2, h3, h4, h5, p, a {
+      color: var(--textcolor);
+  }
+  
+  #logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+  }
+  
+  #name-logo {
+      font-size: 2.3rem;
+  }
+  
+  #jap-name {
+      font-size: 1rem;
+      margin-top: -5px;
+      letter-spacing: 8px;
+  }
+  
+  .header {
+      width: 100%;
+      height: 80px;
+  }
+  
+  #name-logo {
+      font-weight: 800;
+      color: var(--textcolor);
+      letter-spacing: 3px;
+  }
+  
+  #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding: 0 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 80px;
+      background-color: var(--bluehead);
+      z-index: 100;
+      box-shadow: 0 -1px 7px #fff;
+  }
+  
+  #navbar ul {
+      list-style: none;
+  }
+  
+  #navbar ul li {
+      display: inline-flex;
+      /* line-height: 80px;  */
+      align-items: center;
+      /* height: 100%; */
+  }
+  
+  #navbar ul li a {
+      display: inline-block;
+      line-height: 80px;
+      height: 100%;
+      text-decoration: none;
+      color: var(--textcolor);
+      transition: all ease-in-out 500ms;
+      padding: 0 20px;
+      font-weight: 500;
+      margin-top: 10px;
+  }
+  
+  #navbar ul li a:hover {
+      color: var(--bluehover);
+      cursor: pointer;
+      transform: scale(1.1);
+  }
+  
+  #welcome-section {
+      width: 100%;
+      height: 95vh;
+      padding: 0 80px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .intro-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  
+  #profile-img {
+      width: 350px;
+      height: 350px;
+      border-radius: 50%;
+      margin-right: 80px;
+      box-shadow: 0 0 35px var(--bluehead);
+      object-fit: cover;
+      object-position: center;
+  }
+  #profile-img:hover {
+      transform: scale(1.1);
+  }
+  
+  #webdev-text {
+      font-weight: 700;
+  }
+  
+  #intro-parag {
+      font-size: 2.4rem;
+      line-height: 3.5rem;
+      text-align: justify;
+  }
+  
+  #projects {
+      width: 100%;
+      /* height: 100vh; */
+      padding: 0 50px;
+  }
+  
+  .projects-text {
+      letter-spacing: 3px;
+      text-align: center;
+  }
+  
+  .projects-category-title {
+      text-align: center;
+      font-weight: 600;
+  }
+  
+  .html-css-projects, .html-css-js-projects {
+      margin: 20px 0 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 30px;
+      row-gap: 65px;
+  }
+  
+  .project-tile {
+      width: 370px;
+      height: 310px;
+  }
+  
+  .projects-title {
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 20px;
+      font-weight: 600;
+  }
+  
+  .project-images {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 15px;
+  }
+  
+  .project-images:hover {
+      transform: scale(1.1);
+  }
+  
+  #socials {
+      width: 100%;
+      height: 80vh;
+      padding: 30px 80px 0;
+  }
+  
+  .social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      column-gap: 80px;
+      margin-top: 50px;
+  }
+  
+  .social-links-circle {
+      width: 80px;
+      height: 80px;
+  }
+  
+  svg {
+      width: 80px;
+      height: 80px;
+      color: var(--textcolor);
+  }
+  
+  svg:hover {
+      color: var(--bluehead);
+  }
+  
+  footer {
+      background-color: var(--bluehead);
+      /* padding: 10px 50px 5px; */
+      width: 100%;
+      height: fit-content;
+  }
+  
+  footer a, footer p  {
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: 500;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+      #profile-img {
+          width: 340px;
+          height: 340px;
+          margin-right: 60px;
+      }
+  
+      #welcome-section {
+           padding: 0 80px 65px;
+      }
+  
+      #profile-img {
+          margin-right: 70px;
+      }
+  
+      #webdev-text {
+          margin-top: 10px;
+          font-size: 6rem;
+      }
+  
+      h2 {
+          font-size: 5.5rem;
+      }
+  
+      #intro-parag {
+          font-size: 2.2rem;
+          line-height: 3.2rem;
+      }   
+  
+      .social-links-circle {
+          width: 75px;
+          height: 75px;
+      }
+  
+      svg {
+          width: 75px;
+          height: 75px;
+      }
+  }
+  
+  @media only screen and (max-width: 1100px) {
+      #profile-img {
+          width: 320px;
+          height: 320px;
+          margin-right: 55px;
+      }
+  
+      #webdev-text {
+          margin-top: 0;
+          font-size: 5.5rem;
+      }
+  
+      h2 {
+          font-size: 4.5rem;
+      }
+  
+      #intro-parag {
+          font-size: 2.1rem;
+          line-height: 2.9rem;
+      }
+  
+      #welcome-section {
+          padding: 0 75px 60px;
+      }
+  
+      .projects-category-title {
+          font-size: 3.6rem;
+      }
+  
+      .social-links {
+          column-gap: 70px;
+      }
+  
+      .social-links-circle {
+          width: 70px;
+          height: 70px;
+      }
+  
+      svg {
+          width: 70px;
+          height: 70px;
+      }
+  }
+  
+  @media only screen and (max-width: 1050px) {
+      #profile-img {
+          width: 280px;
+          height: 280px;
+      }
+  
+      #webdev-text {
+          margin-top: 10px;
+          font-size: 4.8rem;
+      }
+  
+      h2 {
+          font-size: 3.8rem;
+      }
+  
+      #intro-parag {
+          font-size: 2rem;
+          line-height: 2.8rem;
+      }
+  
+      #welcome-section {
+          padding: 0 75px 70px;
+      }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+      #webdev-text {
+          margin-top: 10px;
+          font-size: 4.7rem;
+      }
+  
+      h2 {
+          font-size: 3.7rem;
+      }
+  
+      #intro-parag {
+          font-size: 1.9rem;
+          line-height: 2.7rem;
+      }
+  
+      .project-tile {
+          width: 360px;
+          height: 290px;
+      }
+  
+      .projects-text {
+          font-size: 4.5rem;
+      }
+  
+      .projects-category-title {
+          font-size: 3.4rem;
+      }
+  
+      .social-links {
+          column-gap: 65px;
+      }
+  }
+  
+  @media only screen and (max-width: 980px) {
+    #profile-img {
+        width: 270px;
+        height: 270px;
+    }
+  
+      #webdev-text {
+          font-size: 4.6rem;
+      }
+  
+      h2 {
+          font-size: 3.6rem;
+      }
+  
+      #intro-parag {
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+      }
+  
+      .social-links-circle {
+          width: 60px;
+          height: 60px;
+      }
+  
+      svg {
+          width: 60px;
+          height: 60px;
+      }
+  }
+  
+  @media only screen and (max-width: 960px) {
+      #webdev-text {
+          font-size: 4.5rem;
+      }
+  
+      h2 {
+          font-size: 3.5rem;
+      }
+  }
+  
+  @media only screen and (max-width: 940px) {
+      #webdev-text {
+          font-size: 4.3rem;
+      }
+  
+      h2 {
+          font-size: 3.3rem;
+      }
+  
+      #intro-parag {
+          font-size: 1.7rem;
+      }
+  }
+  
+  @media only screen and (max-width: 920px) {
+  
+      #webdev-text {
+          font-size: 4.1rem;
+      }
+  
+      h2 {
+          font-size: 3.1rem;
+      }
+  
+      #intro-parag {
+          line-height: 2.6rem;
+      }
+  }
+  
+  @media only screen and (max-width: 900px) {
+      #webdev-text {
+          font-size: 3.9rem;
+      }
+  
+      h2 {
+          font-size: 2.9rem;
+      }
+  
+      #intro-parag {
+          font-size: 1.6rem;
+          line-height: 2.5rem;
+      }
+  
+      .project-tile {
+          width: 340px;
+          height: 290px;
+      }
+  
+      .projects-text {
+          font-size: 4.3rem;
+      }
+  
+      .projects-category-title {
+          font-size: 3.2rem;
+      }
+  }
+  
+  @media only screen and (max-width: 880px) {
+      #webdev-text {
+          font-size: 3.6rem;
+      }
+  
+      h2 {
+          font-size: 2.6rem;
+      }
+  }
+  
+  @media only screen and (max-width: 860px) {
+      #webdev-text {
+          font-size: 3.6rem;
+      }
+  
+      h2 {
+          font-size: 2.6rem;
+      }
+  }
+  
+  @media only screen and (max-width: 840px) {
+    #profile-img {
+        width: 260px;
+        height: 260px;
+    }
+  
+      #webdev-text {
+          font-size: 3.5rem;
+      }
+  
+      h2 {
+          font-size: 2.5rem;
+      }
+  }
+  
+  @media only screen and (max-width: 820px) {
+    #profile-img {
+        width: 250px;
+        height: 250px;
+    }
+
+      #webdev-text {
+          font-size: 3.4rem;
+      }
+  
+      h2 {
+          font-size: 2.4rem;
+      }
+  }
+  
+  @media only screen and (max-width: 800px) {
+      #welcome-section {
+          padding: 0 70px 50px;
+      }
+  
+      #webdev-text {
+          font-size: 3.2rem;
+      }
+  
+      h2 {
+          font-size: 2.2rem;
+      }
+
+      .social-links {
+        gap: 35px;
+    }
+
+    .social-links-circle, svg {
+        width: 60px;
+        height: 60px;
+    }
+  }
+  
+  @media only screen and (min-width: 800px) and (max-width: 719px) {
+      #welcome-section {
+          padding: 0 70px 50px;
+          flex-direction: column;
+      }
+  }
+  
+  @media only screen and (max-width: 720px) {
+
+        #profile-img {
+            width: 240px;
+            height: 240px;
+        }
+
+        #welcome-section {
+            padding: 0 70px;
+            flex-direction: column;
+        }
+
+        #profile-img {
+            /* display: block;
+            margin: 0 auto; */
+            margin: -15px 0 20px;
+        }
+
+        .intro-text, #intro-parag {
+            text-align: center;
+        }
+  
+          .social-links {
+              gap: 30px;
+          }
+  
+          .social-links-circle, svg {
+              width: 50px;
+              height: 50px;
+          }
+      }
+
+      @media only screen and (max-width: 600px) {
+  
+          #name-logo {
+              font-size: 2rem;
+          }
+  
+          #jap-name {
+              font-size: 0.8rem;
+          }
+  
+          #navbar ul li a {
+              padding: 0 10px;
+              font-size: 1.6rem;
+          }
+
+
+        .social-links {
+            gap: 20px;
+        }
+
+        .social-links-circle, svg {
+            width: 40px;
+            height: 40px;
+        }
+
+
+      }
+  
+      @media only screen and (max-width: 500px) {
+
+        #profile-img {
+            width: 230px;
+            height: 230px;
+        }
+
+          #name-logo {
+              font-size: 1.8rem;
+          }
+  
+          #jap-name {
+              font-size: 0.7rem;
+          }
+  
+          #navbar {
+              padding: 0 30px;
+          }
+  
+          #navbar ul li a {
+              font-size: 1.4rem;
+              padding: 0 7px;
+          }
+  
+          #webdev-text {
+              font-size: 3rem;
+          }
+  
+          h2 {
+              font-size: 2.5rem;
+          }
+  
+          #intro-parag {
+              font-size: 1.5rem;
+              line-height: 2.2rem;
+          }
+  
+          .project-tile {
+              width: 310px;
+              height: 270px;
+          }
+  
+          .projects-text {
+              font-size: 3.5rem;
+          }
+  
+          .projects-category-title {
+              font-size: 2.9rem;
+          }
+  
+          .projects-title {
+              font-size: 1.6rem;
+          }
+  
+          .html-css-projects, .html-css-js-projects {
+              row-gap: 75px;
+          }
+  
+          .social-links-circle, svg {
+              width: 35px;
+              height: 35px;
+          }
+      }
+  
+      @media only screen and (max-width: 420px) {
+
+        #profile-img {
+            width: 220px;
+            height: 220px;
+        }
+
+          #name-logo {
+              font-size: 1.6rem;
+          }
+  
+          #jap-name {
+              font-size: 0.6rem;
+          }
+  
+          #navbar {
+              padding: 0 20px;
+          }
+  
+          #navbar ul li a {
+              font-size: 1.3rem;
+              padding: 0 6px;
+          }
+  
+          #welcome-section {
+              padding: 0 50px 50px;
+          }
+  
+           #profile-img {
+              width: 220px;
+              height: 220px;
+          }
+  
+          #webdev-text {
+              font-size: 2.8rem;
+          }
+  
+          h2 {
+              font-size: 2.2rem;
+          }
+  
+          #intro-parag {
+              font-size: 1.4rem;
+              line-height: 2rem;
+          }
+  
+          .project-tile {
+              width: 300px;
+              height: 240px;
+          }
+  
+          .projects-text {
+              font-size: 3.3rem;
+          }
+  
+          .projects-category-title {
+              font-size: 2.3rem;
+          }
+  
+          .html-css-projects, .html-css-js-projects {
+              row-gap: 50px;
+          }
+  
+          .social-links {
+              gap: 15px;
+          }
+  
+          .social-links-circle, svg {
+              width: 30px;
+              height: 30px;
+          }
+  
+          footer a {
+              font-size: 1.1rem;
+          }
+  
+          footer p {
+              font-size: 1.1rem;
+          }
+  
+          @media only screen and (max-width: 365px) {
+          #name-logo {
+              font-size: 1.4rem;
+          }
+  
+          #navbar {
+              padding: 0 18px;
+          }
+  
+          #navbar ul li a {
+              font-size: 1.2rem;
+              padding: 0 4px;
+          }
+  
+          #welcome-section {
+              padding: 0 50px 55px;
+          }
+  
+           #profile-img {
+              width: 210px;
+              height: 210px;
+          }
+  
+          #webdev-text {
+              font-size: 2.4rem;
+          }
+  
+          h2 {
+              font-size: 1.9rem;
+          }
+  
+          #intro-parag {
+              font-size: 1.4rem;
+              line-height: 1.8rem;
+          }
+  
+          .project-tile {
+              width: 270px;
+              height: 210px;
+          }
+  
+          .projects-text {
+              font-size: 3.2rem;
+          }
+  
+          .projects-category-title {
+              font-size: 2.2rem;
+          }
+  
+          .projects-title {
+              font-size: 1.5rem;
+          }
+  
+          .social-links-circle {
+              width: 20px;
+              height: 20px;
+          }
+
+          footer a, footer p {
+              font-size: 1rem;
+          }
+      }
+  
+  }
+  
+  
+  
+  
+  
