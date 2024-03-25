@@ -195,8 +195,8 @@
   }
   
   .project-tile {
-      width: 370px;
-      height: 310px;
+      width: 430px;
+      height: 320px;
   }
   
   .projects-title {
@@ -234,31 +234,36 @@
   }
   
   .social-links-circle {
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
   }
   
   svg {
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
       color: var(--textcolor);
   }
   
   svg:hover {
       color: var(--bluehead);
+      transition: all ease-in-out 300ms;
   }
   
   footer {
       background-color: var(--bluehead);
-      /* padding: 10px 50px 5px; */
+      padding: 15px 50px 5px; 
       width: 100%;
-      height: fit-content;
   }
   
   footer a, footer p  {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       text-align: center;
       font-weight: 500;
+  }
+
+  .bold {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
   
   @media only screen and (max-width: 1200px) {
@@ -290,15 +295,6 @@
           line-height: 3.2rem;
       }   
   
-      .social-links-circle {
-          width: 75px;
-          height: 75px;
-      }
-  
-      svg {
-          width: 75px;
-          height: 75px;
-      }
   }
   
   @media only screen and (max-width: 1100px) {
@@ -325,6 +321,11 @@
       #welcome-section {
           padding: 0 75px 60px;
       }
+
+    .project-tile {
+        width: 400px;
+        height: 290px;
+    }
   
       .projects-category-title {
           font-size: 3.6rem;
@@ -334,15 +335,6 @@
           column-gap: 70px;
       }
   
-      .social-links-circle {
-          width: 70px;
-          height: 70px;
-      }
-  
-      svg {
-          width: 70px;
-          height: 70px;
-      }
   }
   
   @media only screen and (max-width: 1050px) {
@@ -368,6 +360,11 @@
       #welcome-section {
           padding: 0 75px 70px;
       }
+
+      .project-tile {
+        width: 390px;
+        height: 290px;
+    }
   }
   
   @media only screen and (max-width: 1000px) {
@@ -386,7 +383,7 @@
       }
   
       .project-tile {
-          width: 360px;
+          width: 380px;
           height: 290px;
       }
   
@@ -470,6 +467,11 @@
       #intro-parag {
           line-height: 2.6rem;
       }
+
+      .project-tile {
+        width: 440px;
+        height: 290px;
+    }
   }
   
   @media only screen and (max-width: 900px) {
@@ -484,11 +486,6 @@
       #intro-parag {
           font-size: 1.6rem;
           line-height: 2.5rem;
-      }
-  
-      .project-tile {
-          width: 340px;
-          height: 290px;
       }
   
       .projects-text {
@@ -627,7 +624,6 @@
               font-size: 1.6rem;
           }
 
-
         .social-links {
             gap: 20px;
         }
@@ -661,7 +657,6 @@
   
           #navbar ul li a {
               font-size: 1.4rem;
-              padding: 0 7px;
           }
   
           #webdev-text {
@@ -678,7 +673,7 @@
           }
   
           .project-tile {
-              width: 310px;
+              width: 330px;
               height: 270px;
           }
   
@@ -751,7 +746,7 @@
           }
   
           .project-tile {
-              width: 300px;
+              width: 310px;
               height: 240px;
           }
   
@@ -776,11 +771,7 @@
               height: 30px;
           }
   
-          footer a {
-              font-size: 1.1rem;
-          }
-  
-          footer p {
+          footer a, footer p {
               font-size: 1.1rem;
           }
   
@@ -821,7 +812,7 @@
           }
   
           .project-tile {
-              width: 270px;
+              width: 280px;
               height: 210px;
           }
   
@@ -840,10 +831,6 @@
           .social-links-circle {
               width: 20px;
               height: 20px;
-          }
-
-          footer a, footer p {
-              font-size: 1rem;
           }
       }
   
